@@ -1,0 +1,55 @@
+body,
+html {
+	/*On remarque que les dimensions width/height sont au maximum de la taille de la fenêtre*/
+  width: 100%;
+  height: 100%;
+
+  /*La meilleur facon de centrer l'image sur toute la fenetre (CSS Trick: https://css-tricks.com/perfect-full-page-background-image/)*/
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+	font-size:3rem;/*
+	On peut choisir une couleur d'un élément d'une page qu'on aime en allant dans le Inspect, en choisissant avec  
+	l'outil de sélection du menu l'élément avec la couleur désirée et un pop-up apparaîtra avec le code asssocié à cette couleur.*/
+	color:#BCBEBF;
+}
+
+hr{
+	border-color:#ee4b08;
+	border-width: 3px;
+	max-width:65px;
+}
+
+.buffer{
+	height: 12rem;
+}
+
+
+.btn{
+	font-weight: 700;
+	border-radius:300px;
+	text-transform: uppercase;;
+}
+
+.btn-primary{
+	background-color:#F05F44;
+	border-color:#F05F44;
+}
+
+.btn-primary:hover{
+	background-color:#ee4b08;
+	border-color:#ee4b08;
+	border-width: 4px;
+}
+
+.btn-xl{
+	padding:1rem 2rem;
+
+}
+

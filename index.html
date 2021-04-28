@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Utf 8 va permettre d'utiliser e type de codage pour afficher le texte. -->
+    <meta charset="utf-8">
+    <!-- Ces deux lignes sont très importantes et fréquentes dans la plupart des sites web. C'est recommandés de toujours les avoir. En gros, ces tags (mobile first) permettent au site de fonctionner sur mobile. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+   
+      <!-- On utilise ici une classe de bootstrap pour les lettres majuscules -->
+<!--       Pour centre verticalement le contenu au milieu de la page on va utiliser la méthode flexbox 
+      de bootstrap en commanencant par l'activé (d-flex). -->
+      
+      <!-- On rajoute le 2e élément align-item-center qui permet de centrer le tout mais rien ne se passe. Andrei veut nous montrer ce comportemenr ici pour nous apprendre à débugger. -->
+
+      <!-- Pour aligner verticalwment après avoir inspecter le problème directement sur la page, on s'apercoit que la hauteur du container ne correspond pas à hauteur de la page au complet mais seulement à une partie de la page (ca me fait penser aux anchor points) donc il faut, à l'aide deu langage de bootstrap mentionner qu'il sagit de la hauteur complète de la page html. -->
+
+      <div class="container d-flex align-items-center h-100">
+        <div class="row">
+           <!-- La section 1 Titre) s'étend sur les 12 espaces les placant au milieu de la page -->
+          <header class="text-center col-12">
+            <h1 class="text-uppercase"> <strong>The biggest startup event of the year!</strong></h1>
+          </header>
+          <!-- Création d'un espace entre le h1 et le bouton  -->
+          <div class="buffer"></div>
+          <!-- La section 2 (bouton+ligne) s'étende sur les 12 espaces les placant au milieu de la page -->
+          <section class="text-center col-12">
+            <hr>
+            <!-- J'ai créer un compte sur emailchimp pour pouvoir subscribe à la page. Une fois après avoir customise tous les détails nécessiares et le design de la page d'envoi, j'ai rajputé un a href permettant de faire l'envoi nécessaire -->
+            
+            <a href="https://mailchi.mp/e4452a90698a/startupmolo">
+              <button class="btn btn-primary btn-xl">Find out more</button>
+            </a>
+          </section>
+        </div>
+      </div>
+
+    
+
+
+
+  </body>
+</html>
